@@ -57,6 +57,7 @@ Expression entries:
 * `variables` - Object variables.
 * `globals` - Global variables.
 * `properties` - Object properties.
+* `current_scene` - Current Scene name. Contains the value of the current active running scene.
 * `pos_x` - X axis position of the object.
 * `pos_y` - Y axis position of the object.
 * `rotation` - Rotation in degrees of the object.
