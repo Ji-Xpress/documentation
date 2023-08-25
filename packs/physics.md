@@ -16,7 +16,7 @@
 
 * `ready` - When an object is loading.
 * `collides` - When a `star`, `coin`, `alien`, `large_block` or `small_block` collides with another object.
-* `update_loop` - currently unused. But aiming to make this execute on each frame.
+* `update_loop` - Runs for each object on each frame.
 * `broadcast` - Used to process a message broadcast from another object.
 
 ### Broadcast entrypoint expression entries
@@ -28,6 +28,8 @@
 
 * `body.type` - can be one of `alien`, `coin`, `star`, `big_block`, `small_block`, `tile`
 * `body.is_on_floor` - is only available for the `alien` object. This is the status on wether the alien is on the `tile`
+
+**Note:** If you need to execute this over a sequence of code blocks, try to immediately store these values into dedicated Object or Global variables. This avoids situations where somewhere down the line the values of these change due to collisions registered elsewhere.
 
 ## Custom properties
 
