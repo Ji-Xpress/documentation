@@ -29,7 +29,7 @@
 * `body.type` - can be one of `alien`, `coin`, `star`, `big_block`, `small_block`, `tile`
 * `body.is_on_floor` - is only available for the `alien` object. This is the status on wether the alien is on the `tile`
 
-**Note:** If you need to execute this over a sequence of code blocks, try to immediately store these values into dedicated Object or Global variables. This avoids situations where somewhere down the line the values of these change due to collisions registered elsewhere.
+**Note:** If you need to access these values over a large sequence of code blocks, try to immediately store these values into dedicated Object or Global variables. This avoids situations where somewhere down the line the values of these change due to collisions registered elsewhere.
 
 ## Custom properties
 
