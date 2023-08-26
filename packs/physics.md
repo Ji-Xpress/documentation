@@ -11,6 +11,7 @@
 * `star`
 * `desert_background` - serves only as a background for the game
 * `tile` - Floor tile
+* `star_counter` - A visual counter for stars. More details on how to use it in the coming sections
 
 ## Entry points
 
@@ -48,3 +49,18 @@
 ### Coin and Star
 
 * `destroy` - Destroys the object
+
+## Star Counter Object
+
+The star counter is a visual element that shows how many stars have been collected. To make use of it, you need to broadcast the following message:
+
+* `message_id` : `increment_num_stars`
+* `message` : Should contain the number of stars for which to increment with.
+
+### Star counter functions
+
+* `set_num_stars` - Sets the number of stars on the counter
+
+### Star counter object variables
+
+* `num_stars` - Number of stars it contains. Do not update this value manually, just use it for reading of the value
