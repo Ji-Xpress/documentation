@@ -61,6 +61,7 @@ Expression entries:
 * `pos_x` - X axis position of the object.
 * `pos_y` - Y axis position of the object.
 * `rotation` - Rotation in degrees of the object.
+* `object_id` - the `object_id` of the object calling the expression.
 
 Custom entries can also be made available by different game packs. For instance, a game pack may define custom entries for different types of entry points, such as when an object collides with another. Examples of some expressions:
 

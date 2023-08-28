@@ -9,14 +9,21 @@
 * `big_block` - called Large Block in the object list
 * `small_block`
 * `star`
-* `desert_background` - serves only as a background for the game
 * `tile` - Floor tile
 * `star_counter` - A visual counter for stars. More details on how to use it in the coming sections
+
+## Backgrounds
+
+* `background_colored_desert`
+* `background_colored_forest`
+* `background_colored_trees`
+* `background_colored_tall_trees`
+* `desert_background`
 
 ## Entry points
 
 * `ready` - When an object is loading.
-* `collides` - When a `star`, `coin`, `alien`, `large_block` or `small_block` collides with another object.
+* `collides` - When a `star`, `coin`, `alien`, `large_block` or `small_block` collides with another object. It contains data about the colliding object type and object ID.
 * `update_loop` - Runs for each object on each frame.
 * `broadcast` - Used to process a message broadcast from another object.
 
@@ -28,6 +35,7 @@
 ### Collision entrypoint expression entries
 
 * `body.type` - can be one of `alien`, `coin`, `star`, `big_block`, `small_block`, `tile`
+* `body.object_id` - `object_id` of the colliding body.
 * `body.is_on_floor` - is only available for the `alien` object. This is the status on wether the alien is on the `tile`
 
 **Note:** If you need to access these values over a large sequence of code blocks, try to immediately store these values into dedicated Object or Global variables. This avoids situations where somewhere down the line the values of these change due to collisions registered elsewhere.

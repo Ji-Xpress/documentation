@@ -40,4 +40,5 @@ Ji-Xpress works on the concept of Story Packs. Each pack has unique objects that
 
 The following are the current packs that are in built into Ji-Xpress:
 
+* The `platformer` pack. More on the [Physics Pack here](packs/platformer.md)
 * The `physics` pack. More on the [Physics Pack here](packs/physics.md)
