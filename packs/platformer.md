@@ -66,6 +66,7 @@
 * `is_current` - is the current active player (the one currently being controlled).
 * `jump_force` - force of the character's jump.
 * `speed` - Movement speed.
+* `push_force` - Force with which the character can push objects such as `block` on the stage.
 
 ### `locked_door`
 
