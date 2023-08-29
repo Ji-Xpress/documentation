@@ -47,6 +47,10 @@
 
 **Note:** If you need to access these values over a large sequence of code blocks, try to immediately store these values into dedicated Object or Global variables. This avoids situations where somewhere down the line the values of these change due to collisions registered elsewhere.
 
+## Behaviors
+
+* By default the `character_game_console` moves left or right by pressing the left or right keys, and jumps when pressing the space key.
+
 ## Custom properties
 
 **Note:** Some properties may be unavailable and under development.

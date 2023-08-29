@@ -40,6 +40,10 @@
 
 **Note:** If you need to access these values over a large sequence of code blocks, try to immediately store these values into dedicated Object or Global variables. This avoids situations where somewhere down the line the values of these change due to collisions registered elsewhere.
 
+## Behaviors
+
+* By default the `alien` moves left or right by pressing the left or right keys, and jumps when pressing the space key.
+
 ## Custom properties
 
 * `tile` object will have the `num_blocks` custom property - which denotes the width of the tile block. So that you don't have to repeat it tile after tile horizontally.
