@@ -2,22 +2,25 @@
 
 ## Objects
 
-* `block` - Physical Block (Movable)
-* `character_game_console` - Player character - game console
-* `door_open` - Open door
-* `door_locked` - Locked door
-* `gem` - A gem
-* `heart` - A heart
-* `key` - A key
-* `moving_platform` - A moving platform
-* `portal` - A portal
-* `saw` - Saw Hazard object
-* `switch` - Switch
-* `thorns` - Thorn hazards
-* `tiles_bricks` - Brick tiles
-* `tile_grass` - Grass tiles
-* `tile_placeholder` - Placeholder tiles
-* `tile_sand` - Sand tiles
+* `block` - Physical Block (Movable).
+* `game_console_character` - Player character - game console.
+* `boy` - Boy Charater.
+* `girl` - Girl Charater.
+* `soldier` - Soldier Charater.
+* `door_open` - Open door.
+* `door_locked` - Locked door.
+* `gem` - A gem.
+* `heart` - A heart.
+* `key` - A key.
+* `moving_platform` - A moving platform.
+* `portal` - A portal.
+* `saw` - Saw Hazard object.
+* `switch` - Switch.
+* `thorns` - Thorn hazards.
+* `tiles_bricks` - Brick tiles.
+* `tile_grass` - Grass tiles.
+* `tile_placeholder` - Placeholder tiles.
+* `tile_sand` - Sand tiles.
 
 ## Backgrounds
 
@@ -30,7 +33,7 @@
 ## Entry points
 
 * `ready` - When an object is loading.
-* `collides` - Collision happened. It contains data about the colliding object type and object ID - for instance type `block` or `door_locked` or `character_game_console`.
+* `collides` - Collision happened. It contains data about the colliding object type and object ID - for instance type `block` or `door_locked` or `game_console_character`.
 * `update_loop` - Runs for each object on each frame.
 * `broadcast` - Used to process a message broadcast from another object.
 
@@ -49,11 +52,9 @@
 
 ## Behaviors
 
-* By default the `character_game_console` moves left or right by pressing the left or right keys, and jumps when pressing the space key.
+* By default the `game_console_character` moves left or right by pressing the left or right keys, and jumps when pressing the space key.
 
 ## Custom properties
-
-**Note:** Some properties may be unavailable and under development.
 
 ### `block`
 
@@ -61,7 +62,7 @@
 * `is_active` - Is active or not active.
 * `color` - Color of the block.
 
-### `character_game_console`
+### `game_console_character`
 
 * `is_current` - is the current active player (the one currently being controlled).
 * `jump_force` - force of the character's jump.
@@ -71,10 +72,12 @@
 ### `locked_door`
 
 * `is_active` - Is active or not active.
+* `color` - Color of the door.
 
 ### `door_open`
 
 * `is_active` - Is active or not active.
+* `color` - Color of the door.
 
 ### `moving_platform`
 
@@ -86,15 +89,23 @@
 * `move_horizontally` - Should it move horizontally?
 * `move_vertically` - Should it move vertically?
 * `movement_duration` - Duration of movement in one direction (in seconds).
+* `width` - Width of the moving platform
 
 ### `portal`
 
 * `is_active` - Is active or not active.
+* `color` - Color of the portal.
 
 ### `saw`
 
 * `is_active` - Is active or not active.
 * `rotation_speed` - Rotation speed in rotations per second.
+
+### `switch`
+
+* `is_active` - Is active or not active.
+* `is_pressed` - Pressed or not pressed.
+* `color` - Color of the switch.
 
 ### `thorns`
 
@@ -103,6 +114,7 @@
 ### `gem`
 
 * `is_active` - Is active or not active.
+* `color` - Color of the gem.
 
 ### `heart`
 
@@ -111,6 +123,7 @@
 ### `key`
 
 * `is_active` - Is active or not active.
+* `color` - Color of the key.
 
 ### All the different types of tiles: `tiles_bricks` , `tile_grass` , `tile_placeholder` , `tile_sand`
 
@@ -119,13 +132,19 @@
 * `platform_kind` - Sand or Concrete tile.
 * `is_active` - Is active or not active.
 
+### Working with the color property in expressions
+
+You can work with the color property in the following fashion in the expressions (for example to reference the color Red): `properties.color == color_red`
+
+All colors include: `color_red`, `color_green`, `color_blue`, `color_yellow`.
+
 ## Custom functions
 
 ### `block`
 
 * `destroy`
-* `central_impulse` - Apply an impulse force in x and y axis
-* `central_force` - Apply a constant central force in x and y axis
+* `central_impulse` - Apply an impulse force in x and y axis.
+* `central_force` - Apply a constant central force in x and y axis.
 
 ### `character_game_console`
 
@@ -162,6 +181,7 @@
 ### `switch`
 
 * `destroy`
+* `set_pressed` (This custom function sets the switch to pressed or not pressed and updates its `is_pressed` property)
 
 ### `thorns`
 
