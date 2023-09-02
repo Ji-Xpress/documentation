@@ -13,6 +13,7 @@
 * `heart` - A heart.
 * `key` - A key.
 * `moving_platform` - A moving platform.
+* `pickup` - A custom pickup.
 * `portal` - A portal.
 * `saw` - Saw Hazard object.
 * `switch` - Switch.
@@ -90,6 +91,10 @@
 * `move_vertically` - Should it move vertically?
 * `movement_duration` - Duration of movement in one direction (in seconds).
 * `width` - Width of the moving platform
+
+### `pickup`
+
+* `pickup_type` - is one of: `book`, `folder` , `laptop`, `coffee`, `phone`, `pen`, `hammer`, `saw`, `hour_glass`, `stearing_wheel`, `boul`, `knife`, `cooking_pot`
 
 ### `portal`
 
