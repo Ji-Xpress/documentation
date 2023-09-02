@@ -62,7 +62,7 @@
 * `is_active` - Is active or not active.
 * `color` - Color of the block.
 
-### `game_console_character`
+### `game_console_character` / `boy` / `girl` / `soldier`
 
 * `is_current` - is the current active player (the one currently being controlled).
 * `jump_force` - force of the character's jump.
@@ -146,7 +146,7 @@ All colors include: `color_red`, `color_green`, `color_blue`, `color_yellow`.
 * `central_impulse` - Apply an impulse force in x and y axis.
 * `central_force` - Apply a constant central force in x and y axis.
 
-### `character_game_console`
+### `game_console_character` / `boy` / `girl` / `soldier`
 
 * `die`
 
