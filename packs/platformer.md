@@ -19,9 +19,9 @@
 * `switch` - Switch.
 * `thorns` - Thorn hazards.
 * `tiles_bricks` - Brick tiles.
-* `tile_grass` - Grass tiles.
-* `tile_placeholder` - Placeholder tiles.
-* `tile_sand` - Sand tiles.
+* `tiles_grass` - Grass tiles.
+* `tiles_placeholder` - Placeholder tiles.
+* `tiles_sand` - Sand tiles.
 
 ## Backgrounds
 
