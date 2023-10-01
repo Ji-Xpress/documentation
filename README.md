@@ -1,12 +1,16 @@
 # Ji-Xpress Documentation
-Welcome to the Ji-Xpress documentation. Ji-Xpress is a fun and engaging platform for Story Tellers to tell their stories in the form of fun and engaging games. The tool is developed to with intuitive visual experiences that will make telling these engaging stories dead simple.
+Welcome to the Ji-Xpress documentation. Ji-Xpress is a fun and engaging platform for Kids and enthusiasts to learn the art of coding and game creation. It employs highly visual and highly intuitive scene creation and game coding tools.
 
 ## Product Features
 
-* Visual WYSIWYG editor for Story Scenes.
+* Visual WYSIWYG editor for Game Scenes.
 * Visual Code Editor for various Game objects.
 * Ability to work accross multiple Scenes.
 * Ability to manage different projects each with different customizations.
+
+## Terminology
+
+* **Story** - A single story is a single game project. Each game project is called a story.
 
 ## The Ji-Xpress interface
 
